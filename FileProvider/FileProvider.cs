@@ -88,5 +88,107 @@ namespace FileProvider
 
 			ProvidePlaceholderAtUrl (url, null);
 		}
+
+		[Export ("persistentIdentifierForItemAtURL:")]
+		void persistentIdentifierForItemAtURL (NSObject x)
+		{
+			throw new NotImplementedException ();
+		}
+
+		[Export ("URLForItemWithPersistentIdentifier:")]
+		void URLForItemWithPersistentIdentifier (NSObject x)
+		{
+			throw new NotImplementedException ();
+		}
+
+		[Export ("itemForIdentifier:error:")]
+		void itemForIdentifier (NSObject x, out NSError e)
+		{
+			throw new NotImplementedException ();
+		}
+
+		[Export ("enumeratorForContainerItemIdentifier:error:")]
+		void enumeratorForContainerItemIdentifier (NSObject x, out NSError e)
+		{
+			throw new NotImplementedException ();
+		}
+
+		[Export ("createDirectoryWithName:inParentItemIdentifier:completionHandler:")]
+		void createDirectoryWithName (NSObject x, NSObject y, NSObject z)
+		{
+			throw new NotImplementedException ();
+		}
+
+		[Export ("deleteItemWithIdentifier:completionHandler:")]
+		void deleteItemWithIdentifier (NSObject x, NSObject y)
+		{
+			throw new NotImplementedException ();
+		}
+
+		[Export ("importDocumentAtURL:toParentItemIdentifier:completionHandler:")]
+		void importDocumentAtURL (NSObject x, NSObject y, NSObject z)
+		{
+			throw new NotImplementedException ();
+		}
+
+		[Export ("renameItemWithIdentifier:toName:completionHandler:")]
+		void renameItemWithIdentifier (NSObject x, NSObject y, NSObject z)
+		{
+			throw new NotImplementedException ();
+		}
+
+		[Export ("reparentItemWithIdentifier:toParentItemWithIdentifier:completionHandler:")]
+		void reparentItemWithIdentifier (NSObject x, NSObject y, NSObject z)
+		{
+			throw new NotImplementedException ();
+		}
+
+		[Export ("setFavoriteRank:forItemIdentifier:completionHandler:")]
+		void setFavoriteRank (NSObject x, NSObject y, NSObject z)
+		{
+			throw new NotImplementedException ();
+		}
+
+		[Export ("setLastUsedDate:forItemIdentifier:completionHandler:")]
+		void setLastUsedDate (NSObject x, NSObject y, NSObject z)
+		{
+			throw new NotImplementedException ();
+		}
+
+		[Export ("setTagData:forItemIdentifier:completionHandler:")]
+		void setTagData (NSObject x, NSObject y, NSObject z)
+		{
+			throw new NotImplementedException ();
+		}
+
+		[Export ("trashItemWithIdentifier:completionHandler:")]
+		void trashItemWithIdentifier (NSObject x, NSObject y)
+		{
+			throw new NotImplementedException ();
+		}
+
+		[Export ("untrashItemWithIdentifier:toParentItemIdentifier:completionHandler:")]
+		void untrashItemWithIdentifier (NSObject x, NSObject y, NSObject z)
+		{
+			throw new NotImplementedException ();
+		}
+
+		[Export ("domain")]
+		void domain ()
+		{
+			throw new NotImplementedException ();
+		}
+
+		[Export ("fetchThumbnailsForItemIdentifiers:requestedSize:perThumbnailCompletionHandler:completionHandler:")]
+		void fetchThumbnailsForItemIdentifiers (NSObject x, NSObject y, NSObject z, NSObject k)
+		{
+			throw new NotImplementedException ();
+		}
+
+		[Export ("supportedServiceSourcesForItemIdentifier:error:")]
+		void supportedServiceSourcesForItemIdentifier (NSObject x, out NSError e)
+		{
+			throw new NotImplementedException ();
+		}
 	}
 }
