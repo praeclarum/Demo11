@@ -96,6 +96,7 @@
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="DragAndDrop\" />
+    <Folder Include="MachineLearning\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -110,6 +111,15 @@
     <Compile Include="DragAndDrop\DragAndDropViewController.cs" />
     <Compile Include="DragAndDrop\DragView.cs" />
     <Compile Include="DragAndDrop\DropView.cs" />
+    <Compile Include="MachineLearning\MachineLearningViewController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SqueezeNet.mlmodel" />
+    <BundleResource Include="Resources\SqueezeNet.mlmodelc\coremldata.bin" />
+    <BundleResource Include="Resources\SqueezeNet.mlmodelc\model.espresso.net" />
+    <BundleResource Include="Resources\SqueezeNet.mlmodelc\model.espresso.shape" />
+    <BundleResource Include="Resources\SqueezeNet.mlmodelc\model.espresso.weights" />
+    <BundleResource Include="Resources\SqueezeNet.mlmodelc\model\coremldata.bin" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

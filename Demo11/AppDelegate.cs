@@ -13,16 +13,11 @@ namespace Demo11
 
 		public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
 		{
-			
+			//root = new UINavigationController (
+				//new DragAndDrop.DragAndDropViewController ());
+
 			root = new UINavigationController (
-				new DragAndDrop.DragAndDropViewController ());
-
-
-
-
-
-
-
+				new MachineLearning.MachineLearningViewController ());
 
 
 			var window = new UIWindow (UIScreen.MainScreen.Bounds) {
