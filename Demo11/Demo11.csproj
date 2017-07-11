@@ -112,6 +112,7 @@
     <Compile Include="DragAndDrop\DragView.cs" />
     <Compile Include="DragAndDrop\DropView.cs" />
     <Compile Include="MachineLearning\MachineLearningViewController.cs" />
+    <Compile Include="MachineLearning\ImageUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\SqueezeNet.mlmodel" />

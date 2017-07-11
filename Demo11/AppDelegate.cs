@@ -10,18 +10,17 @@ namespace Demo11
 		public override UIWindow Window { get; set; }
 
 		UIViewController root;
+		UINavigationController nav;
 
 		public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
 		{
-			//root = new UINavigationController (
-				//new DragAndDrop.DragAndDropViewController ());
+			//root = new DragAndDrop.DragAndDropViewController ();
 
-			root = new UINavigationController (
-				new MachineLearning.MachineLearningViewController ());
+			root = new MachineLearning.MachineLearningViewController ();
 
-
+			nav = new UINavigationController (root);
 			var window = new UIWindow (UIScreen.MainScreen.Bounds) {
-				RootViewController = root,
+				RootViewController = nav,
 			};
 			window.MakeKeyAndVisible ();
 			return true;
