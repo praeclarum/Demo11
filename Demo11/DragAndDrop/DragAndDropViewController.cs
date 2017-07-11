@@ -19,7 +19,7 @@ namespace Demo11.DragAndDrop
 			View.BackgroundColor = UIColor.White;
 
 			for (var i = 0; i < 6; i++) {
-				DragView v = new DragView ($"{i}");
+				var v = new DropView ($"{i}");
 				AddView (v);
 			}
 		}
@@ -34,8 +34,8 @@ namespace Demo11.DragAndDrop
 			var topGap = (nfloat)64.0;
 			var gap = (nfloat)11.0;
 
-			var w = (b.Width - ((ncols + 1) * gap)) / ncols;
-			var h = (b.Height - ((nrows + 1) * gap) - topGap) / nrows;
+			var w = (nfloat)Math.Round ((b.Width - ((ncols + 1) * gap)) / ncols);
+			var h = (nfloat)Math.Round ((b.Height - ((nrows + 1) * gap) - topGap) / nrows);
 
 			var nexisting = View.Subviews.Length;
 

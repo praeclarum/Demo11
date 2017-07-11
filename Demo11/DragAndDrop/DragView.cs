@@ -11,6 +11,8 @@ namespace Demo11.DragAndDrop
 		public DragView (string name)
 		{
 			Name = name;
+
+			EnableDragging ();
 		}
 
 		public override void Draw (CoreGraphics.CGRect rect)
@@ -23,6 +25,15 @@ namespace Demo11.DragAndDrop
 			var b = Bounds;
 			b.Inflate (-22, -22);
 			text.DrawString (b, UIFont.BoldSystemFontOfSize (24));
+		}
+
+		void EnableDragging ()
+		{
+			//AddInteraction (new UIDragInteraction (new DragDelegate (this)));
+		}
+
+		class DragDelegate //: UIDragInteractionDelegate
+		{
 		}
 	}
 }

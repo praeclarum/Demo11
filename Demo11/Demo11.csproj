@@ -109,6 +109,7 @@
     <Compile Include="AppDelegate.cs" />
     <Compile Include="DragAndDrop\DragAndDropViewController.cs" />
     <Compile Include="DragAndDrop\DragView.cs" />
+    <Compile Include="DragAndDrop\DropView.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
