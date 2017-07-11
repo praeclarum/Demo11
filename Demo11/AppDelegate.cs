@@ -16,7 +16,9 @@ namespace Demo11
 		{
 			//root = new DragAndDrop.DragAndDropViewController ();
 
-			root = new MachineLearning.MachineLearningViewController ();
+			//root = new MachineLearning.MachineLearningViewController ();
+
+			root = new AwesomerReality.AwesomerRealityViewController ();
 
 			nav = new UINavigationController (root);
 			var window = new UIWindow (UIScreen.MainScreen.Bounds) {

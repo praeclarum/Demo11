@@ -97,6 +97,7 @@
     <Folder Include="Resources\" />
     <Folder Include="DragAndDrop\" />
     <Folder Include="MachineLearning\" />
+    <Folder Include="AwesomerReality\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -113,6 +114,7 @@
     <Compile Include="DragAndDrop\DropView.cs" />
     <Compile Include="MachineLearning\MachineLearningViewController.cs" />
     <Compile Include="MachineLearning\ImageUtils.cs" />
+    <Compile Include="AwesomerReality\AwesomerRealityViewController.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\SqueezeNet.mlmodel" />
