@@ -89,6 +89,9 @@ namespace FileProvider
 			ProvidePlaceholderAtUrl (url, null);
 		}
 
+
+#if IOS11
+
 		[Export ("persistentIdentifierForItemAtURL:")]
 		void persistentIdentifierForItemAtURL (NSObject x)
 		{
@@ -108,7 +111,7 @@ namespace FileProvider
 		}
 
 		[Export ("enumeratorForContainerItemIdentifier:error:")]
-		void enumeratorForContainerItemIdentifier (NSObject x, out NSError e)
+		NSObject EnumeratorForContainerItemIdentifier (NSString identifier, out NSError e)
 		{
 			throw new NotImplementedException ();
 		}
@@ -190,5 +193,7 @@ namespace FileProvider
 		{
 			throw new NotImplementedException ();
 		}
+
+#endif
 	}
 }

@@ -9,14 +9,13 @@ namespace Demo11
 	{
 		public override UIWindow Window { get; set; }
 
+		UIViewController root;
+
 		public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
 		{
-			UIViewController root;
-
-
-
-
-			root = new UIViewController ();
+			
+			root = new UINavigationController (
+				new DragAndDrop.DragAndDropViewController ());
 
 
 
