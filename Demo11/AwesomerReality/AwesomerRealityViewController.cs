@@ -6,7 +6,7 @@ using SceneKit;
 
 namespace Demo11.AwesomerReality
 {
-	public class AwesomerRealityViewController : UIViewController, IARSCNViewDelegate
+	public class AwesomerRealityViewController : UIViewController
 	{
 		ARSCNView sceneView = new ARSCNView ();
 
@@ -65,9 +65,9 @@ namespace Demo11.AwesomerReality
 				return node;
 			}
 
-			SCNNode MakeBox (ARAnchor achor)
+			SCNNode MakeBox (ARAnchor anchor)
 			{
-				Console.WriteLine ($"MakePlane ({achor})");
+				Console.WriteLine ($"MakeBox ({anchor})");
 
 				var geometry = SCNBox.Create (0.1f, 0.1f, 0.1f, 0);
 				geometry.FirstMaterial.Diffuse.ContentColor = UIColor.Yellow;
@@ -89,7 +89,7 @@ namespace Demo11.AwesomerReality
 
 				var gnode = SCNNode.FromGeometry (geometry);
 				gnode.Position = new SCNVector3 (planeAchor.Center.X, 0, planeAchor.Center.Z);
-				//gnode.Transform = SCNMatrix4.CreateFromAxisAngle (SCNVector3.UnitX, (float)(Math.PI / 2));
+				gnode.Transform = SCNMatrix4.CreateFromAxisAngle (SCNVector3.UnitX, (float)(Math.PI / 2));
 
 				return gnode;
 			}
